@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 const corsOptions = {
-  origin: "https://job-portal-app-ftd.onrender.com",
+  origin: `${process.env.CLIENT_URI}`,
   credentials: true,
 };
 app.use(cors(corsOptions));
