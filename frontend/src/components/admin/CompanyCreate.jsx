@@ -9,6 +9,7 @@ import { toast } from "sonner";
 import { useDispatch } from "react-redux";
 import { setSingleCompany } from "@/redux/companySlice";
 import axios from "axios";
+axios.defaults.withCredentials = true;
 
 const CompanyCreate = () => {
   const navigate = useNavigate();

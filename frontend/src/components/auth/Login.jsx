@@ -12,6 +12,8 @@ import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { setLoading, setUser } from "@/redux/authSlice";
 
+axios.defaults.withCredentials = true;
+
 const Login = () => {
   const [input, setInput] = useState({
     email: "",

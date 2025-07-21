@@ -12,6 +12,8 @@ import { USER_API_END_POINT } from "@/utils/constant";
 import { useDispatch, useSelector } from "react-redux";
 import { setLoading } from "@/redux/authSlice";
 
+axios.defaults.withCredentials = true;
+
 const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [input, setInput] = useState({

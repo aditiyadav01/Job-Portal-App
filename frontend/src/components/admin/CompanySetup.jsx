@@ -9,6 +9,7 @@ import axios from "axios";
 import { toast } from "sonner";
 import { useNavigate, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
+axios.defaults.withCredentials = true;
 
 const CompanySetup = () => {
   const [loading, setLoading] = useState(false);

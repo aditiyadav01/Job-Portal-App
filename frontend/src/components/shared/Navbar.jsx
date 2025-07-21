@@ -10,6 +10,8 @@ import { USER_API_END_POINT } from "@/utils/constant";
 import { toast } from "sonner";
 import { setUser } from "@/redux/authSlice";
 
+axios.defaults.withCredentials = true;
+
 const Navbar = () => {
   const { user } = useSelector((store) => store.auth);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
