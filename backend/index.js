@@ -13,15 +13,15 @@ const app = express();
 
 // middleware
 
+app.use(cookieParser());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 const corsOptions = {
   origin: "https://job-portal-app-ftd.onrender.com",
   credentials: true,
 };
 app.use(cors(corsOptions));
-
-app.use(cookieParser());
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
 
 // api's
 app.use("/api/v1/user", userRoute);
