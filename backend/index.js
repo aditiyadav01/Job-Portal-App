@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 const corsOptions = {
-  origin: `${process.env.CLIENT_URI}`,
+  origin: "https://job-portal-app-sage.vercel.app",
   credentials: true,
 };
 app.use(cors(corsOptions));
