@@ -14,7 +14,7 @@ const app = express();
 // middleware
 
 const corsOptions = {
-  origin: "https://job-portal-app-sage.vercel.app",
+  origin: "https://job-portal-app-ftd.onrender.com",
   credentials: true,
 };
 app.use(cors(corsOptions));
